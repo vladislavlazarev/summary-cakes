@@ -1,0 +1,40 @@
+.-section-fourth {
+  background-image: url("../images/background.png");
+  padding-top: 150px;
+  overflow: hidden;
+  h2 {
+    color: white;
+    font-family: "playfair-display.bold";
+    font-size: 46px;
+    margin-bottom: 45px;
+  }
+  p {
+    color: white;
+  }
+  .number {
+    font-size: 75px;
+    font-family: "playfair-display.bold";
+    font-weight: 700;
+    color: white;
+    transform: translateY(-35%);
+    margin-right: 15px;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .information {
+    font-size: 22px;
+  }
+  .punkt {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 300px;
+    }
+  }
+  .lalala {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import "./var";
+@import "./components/header";
+@import "./components/section-main";
+@import "./components/second-section";
+@import "./components/section-third";
+@import "./components/section-fourth";
+@import "./components/section-fifth";
+@import "./components/footer";
+
+
+
+
+
+
+
+//------------------code--------------------
+* {
+  box-sizing: border-box;
+};
+p, h1, h2, a {
+  font-family: "Trebuchet MS";
+}
+
+body {
+  background-color: $bg-color;
+  margin: 0;
+}
+.container {
+  width: 1440px!important;
+}
+@font-face {
+  font-family: "playfair-display.bold";
+  src: url("../fonts/playfair-display.bold.ttf");
+}
+@font-face {
+  font-family: "introscript-regular";
+  src: url("../fonts/introscript-regular.otf");
+}
+

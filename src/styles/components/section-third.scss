@@ -1,0 +1,197 @@
+.-third-section {
+ h1 {
+   font-family: "playfair-display.bold";
+   text-align: center;
+ }
+  .-italic {
+    font-family: "introscript-regular";
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+.container {
+  .carousel-control-prev-icon {
+   background-image: url("https://pp.userapi.com/c850236/v850236398/d71a1/d04h1FdMKd8.jpg");
+    background-color: transparent;
+
+  }
+  .carousel-control-next-icon {
+    background-image: url("https://pp.userapi.com/c850236/v850236398/d7186/CGgDMgChMA0.jpg");
+    background-color: transparent;
+  }
+  .carousel-control-next {
+    left: 95%;
+  }
+  .carousel-control-prev {
+    left: -15%;
+  }
+}
+  .row {
+    margin-left: 0!important;
+}
+  .step {
+    height: 580px;
+    background-color: white;
+    padding: 40px 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+
+  }
+
+  .round {
+    margin: 0 30px;
+    font-weight: 500;
+
+    img {
+      margin-bottom: 30px;
+    }
+  }
+
+  .first {
+    img {
+      padding: 0 5px;
+    }
+  }
+
+  .-number {
+    color: $red;
+    font-family: "playfair-display.bold";
+    font-size: 26px;
+    line-height: 1em;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    span {
+      font-size: 50px;
+      line-height: 1.5;
+    }
+  }
+
+  .cakes-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: flex-end;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .third-step {
+    margin-bottom: 100px;
+    .active {
+      display: block;
+    }
+
+    padding-top: 130px;
+    .your-choice {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+    }
+    .btn-danger {
+      padding: 10px 40px;
+      border-radius: 30px;
+      background-color: $red;
+      border-color: transparent;
+      &:hover {
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+        transition: .3s;
+      }
+    }
+    .carousel-item {
+      display: flex;
+      align-items: flex-end;
+    }
+    .oooo {
+      text-align: center;
+      background-color: white;
+    }
+
+    .params {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .param-name {
+      font-family: "introscript-regular";
+      color: $red;
+      font-size: 30px;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: black;
+      border: none;
+      border-bottom: 1px solid $grey;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      font-weight: 600;
+      padding-left: 0;
+      &::after {
+        display: none;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+
+    }
+    .show .btn-secondary {
+      border-color: transparent;
+    }
+  }
+  .first-step {
+    //.carousel {
+    //  img {
+    //    width: 350px !important;
+    //  }
+    padding: 120px 225px;
+    .carousel-control-prev {
+
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .description {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .carousel-item.active {
+      display: flex;
+      background-color:white;
+    }
+
+    .carousel-item {
+
+      background-color: white;
+      img {
+        margin-right: 30px;
+        width: 325px;
+      }
+    }
+
+
+    .btn {
+      border-radius: 25px;
+      text-align: center;
+      background-color: $red;
+      padding: 10px 45px;
+      border-color: transparent;
+
+      &:hover {
+        cursor: pointer;
+        border-color: transparent;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+        transition: .3s;
+      }
+    }
+  }
+  }

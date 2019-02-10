@@ -1,0 +1,269 @@
+.-second-section {
+  h2 {
+  margin-bottom: 50px;
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .cakes-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    .col-md-6 {
+      padding: 0;
+      .cake{
+        width: 560px;
+        height: 560px;
+        background-color: white;
+        position: relative;
+        padding: 30px 40px;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+        transition: .5s;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+          .cake-learn-more img {
+            transform: translateX(10%);
+            transition: .3s;
+          }
+        }
+
+        .cake-photo{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 400px;
+        }
+        .cake-learn-more {
+          position: absolute;
+          bottom: 3%;
+          right: 10%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          img {
+            width: 18px;
+          }
+          p{
+            margin: 0 10px;
+          }
+        }
+
+        &__title {
+          p {
+            font-size: 18px;
+            color: rgba(black, 0.8);
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+          p:last-child {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .col-md-5 {
+      padding: 0;
+      .cake{
+        height: 260px;
+        background-color: white;
+        position: relative;
+        padding: 30px 40px;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+        transition: .5s;
+        &:first-child{
+          margin-bottom: 40px;
+          img {
+            width: 220px;
+          }
+        }
+        &:last-child{
+          margin-bottom: 40px;
+          img {
+            width: 170px;
+          }
+        }
+        &:hover {
+          box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+          cursor: pointer;
+          .cake__learn-more img {
+            transform: translateX(10%);
+            transition: .3s;
+          }
+        }
+        .cake-photo{
+          position: absolute;
+          left: 50%;
+          top: 60%;
+          transform: translate(-50%, -55%);
+
+        }
+        .cake__learn-more {
+          position: absolute;
+          bottom: 3%;
+          right: 10%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          img {
+            width: 18px;
+          }
+          p{
+            margin: 0 10px;
+          }
+        }
+
+        &__title {
+          p {
+            font-size: 18px;
+            color: rgba(black, 0.8);
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+          p:last-child {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .cakes-container2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    .col-md-6 {
+      padding: 0;
+      .cake{
+        width: 560px;
+        height: 560px;
+        background-color: #f3f1f4;
+        position: relative;
+        padding: 30px 40px;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+        transition: .5s;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+          .cake-learn-more img {
+            transform: translateX(10%);
+            transition: .3s;
+          }
+        }
+
+        .cake-photo{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 400px;
+        }
+        .cake-learn-more {
+          position: absolute;
+          bottom: 3%;
+          right: 10%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          img {
+            width: 18px;
+          }
+          p{
+            margin: 0 10px;
+          }
+        }
+
+        &__title {
+          p {
+            font-size: 18px;
+            color: rgba(black, 0.8);
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+          p:last-child {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .col-md-5 {
+      padding: 0;
+      .cake{
+        width: 462.5px;
+        height: 260px;
+        background-color: white;
+        position: relative;
+        padding: 30px 40px;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+        transition: .5s;
+        &:first-child{
+          margin-bottom: 40px;
+          img {
+            width: 220px;
+          }
+        }
+        &:last-child{
+          margin-bottom: 40px;
+          img {
+            width: 170px;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+          .cake__learn-more img {
+            transform: translateX(10%);
+            transition: .3s;
+          }
+        }
+        .cake-photo{
+          position: absolute;
+          left: 50%;
+          top: 60%;
+          transform: translate(-50%, -55%);
+
+        }
+        .cake__learn-more {
+          position: absolute;
+          bottom: 3%;
+          right: 10%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          img {
+            width: 18px;
+          }
+          p{
+            margin: 0 10px;
+          }
+        }
+
+        &__title {
+          p {
+            font-size: 18px;
+            color: rgba(black, 0.8);
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+          p:last-child {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+
+}

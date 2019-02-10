@@ -1,0 +1,134 @@
+section.section.-third-section
+  .container
+    h1 Индивидуальный заказ
+    .-italic Соберите торт в 3 шага
+    .first-step.step
+      p.-number
+        span 01
+        br
+        | Выберите
+        br
+        | начинку
+      #carouselExampleControls.carousel.slide(data-ride='carousel')
+        .carousel-inner
+          .carousel-item.active
+            img(src='./assets/images/section-third__cake1.png', alt="")
+            .info
+              p.name Шоколадный ганаш
+              p.description Ароматный шоколадный бисквит, густной шоколадный крем - самый шоколадный из всех возможных десертов!
+              p.price 1000 руб/кг
+              .btn.btn-danger ВЫБРАТЬ
+
+        a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+
+
+    .second-step.step
+      p.-number
+        span 02
+        br
+        | Размер
+      .cakes-container
+        .first.round
+          img(src="assets/images/round1.png")
+          p 17-18см
+            br
+            |(1кг - 6 персон)
+        .second.round
+          img(src="assets/images/round2.png")
+          p 23-24см
+            br
+            | (10 - 12 персон)
+        .third.round
+          img(src="assets/images/round3.png")
+          p Два яруса 25 и 20 см
+            br
+            | (15 - 20 персон)
+        .fourth.round
+          img(src="assets/images/round4.png")
+          p Два яруса 30,25 и 18 см
+            br
+            | (25 - 30 персон)
+    .third-step.step
+      .lul.row
+        p.-number
+          span 03
+          br
+          | Оформление
+        .col-md-4
+          img(src="./assets/images/section-third__cake4.png")
+        .col-md-8
+          #carousel.carousel.slide(data-ride="carousel")
+            // Индикаторы
+            ol.carousel-indicators
+              li.active(data-target="#carousel" data-slide-to="0")
+              li(data-target="#carousel" data-slide-to="1")
+              li(data-target="#carousel" data-slide-to="2")
+            .carousel-inner
+              .row.carousel-item.active
+                .oooo.col-md-6
+                  img.img-fluid(src="./assets/images/section-third__cake2.png" alt="...")
+                  p Ягодное ассорти
+                    br
+                    | 700руб/кг
+                .oooo.col-md-6
+                  img.img-fluid(src="./assets/images/section-third__cake3.png" alt="...")
+                  p Ягодное ассорти
+                    br
+                    | 700руб/кг
+              .row.carousel-item
+                .oooo.col-md-6
+                  img.img-fluid(src="./assets/images/section-second__cake3.png" alt="...")
+                  p Ягодное ассорти
+                    br
+                    | 700руб/кг
+                .oooo.col-md-6
+                  img.img-fluid(src="./assets/images/section-second__cake4.png" alt="...")
+                  p Ягодное ассорти
+                    br
+                    | 700руб/кг
+
+
+            // Элементы управления
+            a.carousel-control-prev(href="#carousel" role="button" data-slide="prev")
+              span.carousel-control-prev-icon(aria-hidden="false")
+              span.sr-only Предыдущий
+            a.carousel-control-next(href="#carousel" role="button" data-slide="next")
+              span.carousel-control-next-icon(aria-hidden="true")
+              span.sr-only Следующий
+
+
+        .row.your-choice
+          .params-container.col-md-3
+            p.param-name Новинка
+            .dropdown.first-dropdown
+              a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                | Шоколадный ганаш
+              .dropdown-menu(aria-labelledby="dropdownMenuLink")
+                a.dropdown-item(href="#") Тортик
+                a.dropdown-item(href="#") Кекс
+                a.dropdown-item(href="#") Пирожок
+          .params-container.col-md-3
+            p.param-name Размер
+            .dropdown.first-dropdown
+              a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                | 2кг
+              .dropdown-menu(aria-labelledby="dropdownMenuLink")
+                a.dropdown-item(href="#") 3кг
+                a.dropdown-item(href="#") 4кг
+                a.dropdown-item(href="#") 5кг
+          .params-container.col-md-3
+            p.param-name Оформление
+            .dropdown.first-dropdown
+              a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                | Маршмеллоу
+              .dropdown-menu(aria-labelledby="dropdownMenuLink")
+                a.dropdown-item(href="#") Ягодное ассорти
+                a.dropdown-item(href="#") Маршмеллоу
+                a.dropdown-item(href="#") Ягодное ассорти
+          .param-container.col-md-3
+            .btn.btn-danger Заказать торт
