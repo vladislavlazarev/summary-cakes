@@ -9,22 +9,58 @@ section.section.-third-section
         | Выберите
         br
         | начинку
-      #carouselExampleControls.carousel.slide(data-ride='carousel')
-        .carousel-inner
-          .carousel-item.active
-            img(src='./assets/images/section-third__cake1.png', alt="")
-            .info
-              p.name Шоколадный ганаш
-              p.description Ароматный шоколадный бисквит, густной шоколадный крем - самый шоколадный из всех возможных десертов!
-              p.price 1000 руб/кг
-              .btn.btn-danger ВЫБРАТЬ
+      .carousel
+        #carouselExampleControls.carousel.slide(data-ride="carousel")
+          .carousel-inner
+            .carousel-item.active
+              img(src="assets/images/section-third__cake1.png" alt="...")
+              .info
+                p.name Шоколадный ганаш
+                p.description Ароматный шоколадный бисквит, густной шоколадный крем - самый шоколадный из всех возможных десертов!
+                p.price 1000 руб/кг
+                .btn.btn-danger ВЫБРАТЬ
+            .carousel-item
+              img(src="assets/images/section-third__cake1.png" alt="...")
+              .info
+                p.name НЕ шоколадный ганаш
+                p.description НЕ ароматный шоколадный бисквит, густной шоколадный крем - самый шоколадный из всех возможных десертов!
+                p.price 1000 руб/кг
+                .btn.btn-danger ВЫБРАТЬ
+            //.carousel-item
+            //  img(src="assets/images/section-third__cake1.png" alt="...")
+            //  .info
+            //    p.name Шоколадный ганаш
+            //    p.description Ароматный шоколадный бисквит, густной шоколадный крем - самый шоколадный из всех возможных десертов!
+            //    p.price 1000 руб/кг
+            //    .btn.btn-danger ВЫБРАТЬ
+          a.carousel-control-prev(href="#carouselExampleControls" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Previous
+          a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Next
 
-        a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
-          span.carousel-control-prev-icon(aria-hidden='true')
-          span.sr-only Previous
-        a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
-          span.carousel-control-next-icon(aria-hidden='true')
-          span.sr-only Next
+
+
+
+
+
+      //
+      //#carouselExampleControls.carousel.slide(data-ride='carousel')
+      //  .carousel-item.active
+      //    img(src='./assets/images/section-third__cake1.png', alt="")
+      //    .info
+      //      p.name Шоколадный ганаш
+      //      p.description Ароматный шоколадный бисквит, густной шоколадный крем - самый шоколадный из всех возможных десертов!
+      //      p.price 1000 руб/кг
+      //      .btn.btn-danger ВЫБРАТЬ
+      //
+      //a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+      //  span.carousel-control-prev-icon(aria-hidden='true')
+      //  span.sr-only Previous
+      //a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+      //  span.carousel-control-next-icon(aria-hidden='true')
+      //  span.sr-only Next
 
 
     .second-step.step
@@ -59,15 +95,10 @@ section.section.-third-section
           span 03
           br
           | Оформление
-        .col-md-4
+        .col-md-5
           img(src="./assets/images/section-third__cake4.png")
-        .col-md-8
-          #carousel.carousel.slide(data-ride="carousel")
-            // Индикаторы
-            ol.carousel-indicators
-              li.active(data-target="#carousel" data-slide-to="0")
-              li(data-target="#carousel" data-slide-to="1")
-              li(data-target="#carousel" data-slide-to="2")
+        .col-md-7
+          #carouselExampleControls2.carousel.slide(data-ride="carousel")
             .carousel-inner
               .row.carousel-item.active
                 .oooo.col-md-6
@@ -91,15 +122,50 @@ section.section.-third-section
                   p Ягодное ассорти
                     br
                     | 700руб/кг
-
-
-            // Элементы управления
-            a.carousel-control-prev(href="#carousel" role="button" data-slide="prev")
-              span.carousel-control-prev-icon(aria-hidden="false")
-              span.sr-only Предыдущий
-            a.carousel-control-next(href="#carousel" role="button" data-slide="next")
+            a.carousel-control-prev(href="#carouselExampleControls2" role="button" data-slide="prev")
+              span.carousel-control-prev-icon(aria-hidden="true")
+              span.sr-only Previous
+            a.carousel-control-next(href="#carouselExampleControls2" role="button" data-slide="next")
               span.carousel-control-next-icon(aria-hidden="true")
-              span.sr-only Следующий
+              span.sr-only Next
+          //#carousel.carousel.slide(data-ride="carousel")
+          //  // Индикаторы
+          //  ol.carousel-indicators
+          //    li.active(data-target="#carousel" data-slide-to="0")
+          //    li(data-target="#carousel" data-slide-to="1")
+          //    li(data-target="#carousel" data-slide-to="2")
+          //  .carousel-inner
+          //    .row.carousel-item.active
+          //      .oooo.col-md-6
+          //        img.img-fluid(src="./assets/images/section-third__cake2.png" alt="...")
+          //        p Ягодное ассорти
+          //          br
+          //          | 700руб/кг
+          //      .oooo.col-md-6
+          //        img.img-fluid(src="./assets/images/section-third__cake3.png" alt="...")
+          //        p Ягодное ассорти
+          //          br
+          //          | 700руб/кг
+          //    .row.carousel-item
+          //      .oooo.col-md-6
+          //        img.img-fluid(src="./assets/images/section-second__cake3.png" alt="...")
+          //        p Ягодное ассорти
+          //          br
+          //          | 700руб/кг
+          //      .oooo.col-md-6
+          //        img.img-fluid(src="./assets/images/section-second__cake4.png" alt="...")
+          //        p Ягодное ассорти
+          //          br
+          //          | 700руб/кг
+          //
+          //
+          //  // Элементы управления
+          //  a.carousel-control-prev(href="#carousel" role="button" data-slide="prev")
+          //    span.carousel-control-prev-icon(aria-hidden="false")
+          //    span.sr-only Предыдущий
+          //  a.carousel-control-next(href="#carousel" role="button" data-slide="next")
+          //    span.carousel-control-next-icon(aria-hidden="true")
+          //    span.sr-only Следующий
 
 
         .row.your-choice

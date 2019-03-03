@@ -2,9 +2,6 @@
   padding: 60px 0;
   position: relative;
 margin-bottom: 40px;
-  .navbar__links:first-child {
-
-  }
   h2 {
     color: black;
     font-family: "playfair-display.bold";
@@ -132,5 +129,6 @@ margin-bottom: 40px;
     right: 0;
     bottom: 0;
     z-index: -2;
+    max-width: 60%;
   }
 }

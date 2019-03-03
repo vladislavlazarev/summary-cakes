@@ -63,6 +63,6 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('ui', gulp.parallel('watch', 'browser-sync'))
+gulp.task('ui', gulp.parallel('watch', 'browser-sync'));
 
 gulp.task('build', gulp.series('clean', 'pages', 'styles', 'images', 'fonts', 'scripts', 'ui'));

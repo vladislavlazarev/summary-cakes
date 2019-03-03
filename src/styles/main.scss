@@ -26,6 +26,7 @@ p, h1, h2, a {
 body {
   background-color: $bg-color;
   margin: 0;
+  padding-top: 30px;
 }
 .container {
   width: 1440px!important;
@@ -37,5 +38,9 @@ body {
 @font-face {
   font-family: "introscript-regular";
   src: url("../fonts/introscript-regular.otf");
+}
+@font-face {
+  font-family: "circe-regular";
+  src: url("../fonts/circe-regular.ttf");
 }
 

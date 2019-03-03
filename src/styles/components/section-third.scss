@@ -20,7 +20,7 @@
     background-color: transparent;
   }
   .carousel-control-next {
-    left: 95%;
+    left: 125%;
   }
   .carousel-control-prev {
     left: -15%;
@@ -37,38 +37,35 @@
     border-radius: 5px;
     position: relative;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
-
   }
-
   .round {
-    margin: 0 30px;
+    margin: 0 3px;
     font-weight: 500;
-
     img {
       margin-bottom: 30px;
     }
   }
 
-  .first {
-    img {
-      padding: 0 5px;
-    }
-  }
 
   .-number {
     color: $red;
     font-family: "playfair-display.bold";
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1em;
     position: absolute;
     left: 5%;
     top: 5%;
     span {
-      font-size: 50px;
+      font-size: 40px;
       line-height: 1.5;
     }
   }
-
+  .carousel {
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+  }
   .cakes-container {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -77,11 +74,21 @@
     top: 50%;
     display: flex;
     justify-content: flex-start;
+    max-width: 100%;
+
+  }
+  .carousel-inner {
+    overflow: unset!important;
   }
   .third-step {
     margin-bottom: 100px;
     .active {
-      display: block;
+      display: none!important;
+    }
+    #carouselExampleControls2 {
+      .carousel-inner {
+        left: 20%;
+      }
     }
 
     padding-top: 130px;
@@ -133,48 +140,41 @@
       &:focus {
         box-shadow: none;
       }
-
     }
     .show .btn-secondary {
       border-color: transparent;
     }
   }
   .first-step {
-    //.carousel {
-    //  img {
-    //    width: 350px !important;
-    //  }
     padding: 120px 225px;
     .carousel-control-prev {
-
     }
-
     .name {
-      font-weight: 700;
+      font-weight: 600;
       font-size: 20px;
     }
-
     .description {
       font-weight: 500;
       font-size: 18px;
     }
-
     .price {
       font-size: 24px;
       font-weight: 700;
     }
-
     .carousel-item.active {
-      display: flex;
+      //display: flex;
       background-color:white;
+      display: none;
     }
 
     .carousel-item {
-
       background-color: white;
+      width: 130%;
+      display: flex;
       img {
         margin-right: 30px;
-        width: 325px;
+        width: 270px;
+        height: 320px
       }
     }
 
@@ -183,7 +183,7 @@
       border-radius: 25px;
       text-align: center;
       background-color: $red;
-      padding: 10px 45px;
+      padding: 8px 35px;
       border-color: transparent;
 
       &:hover {
@@ -195,3 +195,10 @@
     }
   }
   }
+@media (min-width:992px) {
+  .step {
+    .round {
+      margin: 0 35px;
+    }
+  }
+}

@@ -1,11 +1,13 @@
-.-section-fourth {
+.section-fourth {
   background-image: url("../images/background.png");
   padding-top: 150px;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position-x: 60%;
   h2 {
     color: white;
     font-family: "playfair-display.bold";
-    font-size: 46px;
+    font-size: 30px;
     margin-bottom: 45px;
   }
   p {
@@ -20,11 +22,11 @@
     margin-right: 15px;
   }
   .title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
   }
   .information {
-    font-size: 22px;
+    font-size: 16px;
   }
   .punkt {
     display: flex;
@@ -38,3 +40,6 @@
     overflow: hidden;
   }
 }
+@media (min-width: 950px) {
+
+};
